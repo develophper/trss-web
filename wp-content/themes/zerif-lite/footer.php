@@ -113,18 +113,18 @@
 			if( !empty($zerif_email_icon) || !empty($zerif_email) ) {
 				echo '<div class="'.$footer_class.' company-details">';
 				
-					if( !empty($zerif_email_icon) ) {
-						echo '<div class="icon-top green-text">';
-							echo '<img src="'.esc_url($zerif_email_icon).'" alt="" />';
-						echo '</div>';
-					}
-					if( !empty($zerif_email) ) {
-						echo '<div class="zerif-footer-email">';	
-							echo wp_kses_post( $zerif_email );
-						echo '</div>';
-					} else if( isset( $wp_customize ) ) {
-						echo '<div class="zerif-footer-email zerif_hidden_if_not_customizer"></div>';
-					}	
+					// if( !empty($zerif_email_icon) ) {
+					// 	echo '<div class="icon-top green-text">';
+					// 		echo '<img src="'.esc_url($zerif_email_icon).'" alt="" />';
+					// 	echo '</div>';
+					// }
+					// if( !empty($zerif_email) ) {
+					// 	echo '<div class="zerif-footer-email">';	
+					// 		echo wp_kses_post( $zerif_email );
+					// 	echo '</div>';
+					// } else if( isset( $wp_customize ) ) {
+					// 	echo '<div class="zerif-footer-email zerif_hidden_if_not_customizer"></div>';
+					// }	
 				
 				echo '</div>';
 			}
@@ -159,29 +159,29 @@
 						echo '<ul class="social">';
 						
 						/* facebook */
-						if( !empty($zerif_socials_facebook) ):
-							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_facebook).'"><i class="fa fa-facebook"></i></a></li>';
-						endif;
-						/* twitter */
-						if( !empty($zerif_socials_twitter) ):
-							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_twitter).'"><i class="fa fa-twitter"></i></a></li>';
-						endif;
-						/* linkedin */
-						if( !empty($zerif_socials_linkedin) ):
-							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_linkedin).'"><i class="fa fa-linkedin"></i></a></li>';
-						endif;
-						/* behance */
-						if( !empty($zerif_socials_behance) ):
-							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_behance).'"><i class="fa fa-behance"></i></a></li>';
-						endif;
-						/* dribbble */
-						if( !empty($zerif_socials_dribbble) ):
-							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_dribbble).'"><i class="fa fa-dribbble"></i></a></li>';
-						endif;
-						/* instagram */
-						if( !empty($zerif_socials_instagram) ):
-							echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_instagram).'"><i class="fa fa-instagram"></i></a></li>';
-						endif;
+						// if( !empty($zerif_socials_facebook) ):
+						// 	echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_facebook).'"><i class="fa fa-facebook"></i></a></li>';
+						// endif;
+						// /* twitter */
+						// if( !empty($zerif_socials_twitter) ):
+						// 	echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_twitter).'"><i class="fa fa-twitter"></i></a></li>';
+						// endif;
+						// /* linkedin */
+						// if( !empty($zerif_socials_linkedin) ):
+						// 	echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_linkedin).'"><i class="fa fa-linkedin"></i></a></li>';
+						// endif;
+						// /* behance */
+						// if( !empty($zerif_socials_behance) ):
+						// 	echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_behance).'"><i class="fa fa-behance"></i></a></li>';
+						// endif;
+						// /* dribbble */
+						// if( !empty($zerif_socials_dribbble) ):
+						// 	echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_dribbble).'"><i class="fa fa-dribbble"></i></a></li>';
+						// endif;
+						// /* instagram */
+						// if( !empty($zerif_socials_instagram) ):
+						// 	echo '<li><a'.$attribut_new_tab.' href="'.esc_url($zerif_socials_instagram).'"><i class="fa fa-instagram"></i></a></li>';
+						// endif;
 						echo '</ul>';
 					endif;	
 			
@@ -191,7 +191,7 @@
 						echo '<p id="zerif-copyright" class="zerif_hidden_if_not_customizer"></p>';
 					endif;
 					
-					echo '<div class="zerif-copyright-box"><a class="zerif-copyright" href="http://themeisle.com/themes/zerif-lite/"'.$attribut_new_tab.' rel="nofollow">Zerif Lite </a>'.__('powered by','zerif-lite').'<a class="zerif-copyright" href="http://wordpress.org/"'.$attribut_new_tab.' rel="nofollow"> WordPress</a></div>';
+					echo '<div class="zerif-copyright-box"><a class="zerif-copyright" href="/" rel="nofollow">TRSS Web </a>'.__('powered by','TR Software Services Limited').'<a class="zerif-copyright" href="/" rel="nofollow"> TR Software Services Limited</a></div>';
 					
 					echo '</div>';
 			
